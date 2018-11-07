@@ -9,24 +9,23 @@
 
 # Declare variables
 ACTION=$1
-INPUT=${2:-1}
 
 # Perform requested operation
 case "$1" in
-	list)
+	list) python list_action.py
 		;;
-	clear)
+	clear) python clear_action.py
 		;;
-	add)
+	add) python add_action.py
 		;;
-	remove)
+	remove) python remove_action.py
 		;;
-	help) echo "Welcome to Terminal_To_Do! Try typing ttd <op> <arg> to get started:"
+	help) echo "Welcome to Terminal_To_Do! Try typing ttd <op> to get started:"
 		echo "	Args:"
 		echo "		list 	- lists all to-do items"
 		echo "		clear 	- clears the to-do list"
-		echo "		add 	- Follow with an item in quotes to add to the list"
-		echo "		remove 	- Follow with a line number of an item to remove"
+		echo "		add 	- allows you to enter another item to your list"
+		echo "		remove 	- allows you to remove a specific item from your list"
 		echo "		help 	- shows this :)"
 		;;
 	*) echo "ttd: Command not found. Try \"help\" param for help"
