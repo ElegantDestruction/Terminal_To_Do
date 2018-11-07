@@ -1,0 +1,38 @@
+#! /bin/bash
+
+# Author: Jacob Hillebrand
+# Incepted: 11/06/2018
+# Description: This is a simple terminal program that will
+#	allow a user to keep a to-do list. The user can call 
+#	the script with parameters like "list", "clear","add",
+#	and "remove" to interact with the list.
+
+# Declare variables
+ACTION=$1
+INPUT=$2
+
+# Grab cmdline arguments
+echo ${ACTION}
+echo ${INPUT}
+
+# Perform requested operation
+case "$1" in
+	"list")
+		;;
+	"clear")
+		;;
+	"add")
+		;;
+	"remove")
+		;;
+	"help") echo "Welcome to Terminal_To_Do! Try typing ttd <op> <arg> to get started:"
+		echo "	Args:"
+		echo "		list 	- lists all to-do items"
+		echo "		clear 	- clears the to-do list"
+		echo "		add 	- Follow with an item in quotes to add to the list"
+		echo "		remove 	- Follow with a line number of an item to remove"
+		echo "		help 	- shows this :)
+		;;
+	*) echo "Command not found. Try "help" param for help"
+		;;
+esac
