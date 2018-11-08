@@ -3,6 +3,6 @@
 
 new_item = raw_input('New Item > ')
 
-file = open('to_do_list.txt', 'a+')
+file = open('~/Terminal_To_Do-master/Terminal_To_Do/to_do_list.txt', 'a+')
 file.write(new_item+'\n')
 file.close()

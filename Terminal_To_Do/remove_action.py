@@ -5,7 +5,7 @@
 lnum = raw_input('Item to remove > ')
 
 # Create file handler
-r_file = open('to_do_list.txt','r+')
+r_file = open('~/Terminal_To_Do-master/Terminal_To_Do/to_do_list.txt','r+')
 
 
 def grab_file_contents(r_file,lnum):
