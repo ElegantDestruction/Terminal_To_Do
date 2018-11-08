@@ -12,13 +12,13 @@ ACTION=$1
 
 # Perform requested operation
 case "$1" in
-	list) python ~/Terminal_To_Do/list_action.py
+	list) python ~/Terminal_To_Do-master/list_action.py
 		;;
-	clear) python ~/Terminal_To_Do/clear_action.py
+	clear) python ~/Terminal_To_Do-master/clear_action.py
 		;;
-	add) python ~/Terminal_To_Do/add_action.py
+	add) python ~/Terminal_To_Do-master/add_action.py
 		;;
-	remove) python ~/Terminal_To_Do/remove_action.py
+	remove) python ~/Terminal_To_Do-master/remove_action.py
 		;;
 	help) echo "Welcome to Terminal_To_Do! Try typing ttd <op> to get started:"
 		echo "	Args:"
